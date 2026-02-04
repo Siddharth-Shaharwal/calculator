@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #1b1f24, #2a2f36, #1b1f24);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 450px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #2b3037, #1f2329);
+    border: 1px solid white;
+    box-shadow:
+        10px 10px 20px #14171b,
+        -10px -10px 20px #343a42;
+}
+.inputbox{
+    color: white;
+    font-size: 40px;
+    width: 250px;
+    size: 30px;
+    text-align: right;
+    direction: ltr;
+    background-color: transparent;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border: none;
+}
+.inputbox::placeholder{
+    color: white;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.buttons button{
+    height: 50px;
+    width: 50px;
+    font-size: 15px;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(145deg, #2a2f36, #1f2329);
+    color: #e5e7eb;
+    box-shadow:
+        4px 4px 8px #14171b,
+        -4px -4px 8px #343a42;
+}
+.buttons button.func{
+    background: linear-gradient(145deg, #262b32, #1b1f24);
+    color: #22c55e;
+}
+.buttons button.equal {
+    background: linear-gradient(145deg, #ff9f1c, #ff7a00);
+    color: white;
+}
+button:active {
+    background: linear-gradient(145deg, #1f2329, #2a2f36);
+    box-shadow:
+        inset 4px 4px 8px #14171b,
+        inset -4px -4px 8px #343a42;
+}
